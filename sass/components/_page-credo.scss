@@ -1,0 +1,64 @@
+.section__credo {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) { 
+    padding-top: 94px;
+    padding-bottom: 118px;
+  }
+
+  }
+
+  
+  .credo__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    text-align: center;
+    color: var(--bold-txt-cl);
+
+    @media screen and (min-width: 768px) {
+     text-align: left;
+  }
+}
+
+
+  .credo__item {
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
+  }
+  
+  .credo__icon {
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     margin-bottom: 30px;
+    height: 120px;
+     background: var(--primary-bc-cl);
+    border-radius: 4px;
+    background-position: center;
+
+  }
+
+.list__credo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  
+  }
+}
