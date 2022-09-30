@@ -23,15 +23,20 @@
       <div class="container header__container">
         <a class="logo link header__item" href="">Web<span class="logo__dark">Studio</span></a>
 
-        <button type="button" class="menu__btn js-open-menu" data-menu-button>
+        <button type="button" class="menu-btn js-open-menu" data-menu-button>
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="menu__icon-cross" href="./images/icons.svg#icon-close40"></use>
-            <use class="menu__icon" href="./images/icons.svg#icon-menu40"></use>
+            <!-- <use class="menu__icon-cross" href="./images/icons.svg#icon-close40"></use> -->
+            <use href="./images/icons.svg#icon-menu40"></use>
           </svg>
         </button>
 
         <!--Навігація на інші сторінки-->
-      <div class="menu-content js-menu-container">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close40"></use>
+            </svg>
+          </button>
 
         <nav class="nav">
           <ul class="nav__list">
@@ -51,8 +56,8 @@
           <li class="header__contact">
             <a class="link nav__link" href="mailto:info@devstudio.com">
               <svg class="svg-id" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com
+                <use href="./images/icons.svg#icon-mail"></use></svg>
+              info@devstudio.com
             </a>
           </li>
 
@@ -64,7 +69,16 @@
             </a>
           </li>
         </ul>
-      </div>
+
+        <ul class="mobil-socials list">
+          <li><a href="" class="link">Instagram</a></li>
+          <li><a href="" class="link">Twitter</a></li>
+          <li><a href="" class="link">Facebook</a></li>
+          <li><a href="" class="link">LinkedIn</a></li>
+        </ul>
+    
+        </div>
+    </div>
     </header>
 
     <main>
@@ -502,7 +516,9 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container container__footer">
-        <div>
+
+        <div class="footer-content">
+        <div class="footer-main">
           <a class="logo link footer__item" href="">Web<span class="logo__light">Studio</span></a>
           <address>
             <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
@@ -566,11 +582,12 @@
           </ul>
         </div>
 
+
         <div class="subscription">
-          <div>
+          
             <h3 class="footer__title">Підпишіться на розсилку</h3>
             <input type="text" placeholder="E-mail" class="footer__input" />
-          </div>
+          
 
           <button class="subscription__btn" type="submit"
             >Підписатися<svg width="24" height="24">
@@ -578,14 +595,20 @@
           ></button>
         </div>
       </div>
+    </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/header-scroll.js"></script>
+    <!-- animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos-animate.js"></script>
+    <!-- mobile menu -->
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

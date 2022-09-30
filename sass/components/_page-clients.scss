@@ -8,24 +8,16 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   
   .client__item {
-    height: 92px;
-    max-width: 210px;
-
-    @media screen and (min-width: 768px) {
-      max-width: 226px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      max-width: 170px;
-    }
-  }
+   height: 92px;
+   }
   
   .client__link {
-    width: 100%;
+    min-width: 210px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -40,5 +32,6 @@
       color: var(--accent-txt-cl);
       border-color: var(--accent-txt-cl);
     }
+
   }
   
