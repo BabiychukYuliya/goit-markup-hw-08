@@ -62,8 +62,21 @@
     fill:var(--accent-txt-cl);
   }
 
-  .mobile-socials {
+  .mobil-socials {
     display: flex;
-    margin-top: 40px;
     gap: 10px;
+    color: var(--accent-txt-cl);
+    
+    
+  }
+
+  .mob-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0.81;
+  padding: 10px;
+  }
+
+  .mob-link {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
