@@ -23,14 +23,24 @@
       <div class="container header__container">
         <a class="logo link header__item" href="">Web<span class="logo__dark">Studio</span></a>
 
+        <button type="button" class="menu-btn js-open-menu" data-menu-button>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <!-- <use class="menu__icon-cross" href="./images/icons.svg#icon-close40"></use> -->
+            <use href="./images/icons.svg#icon-menu40"></use>
+          </svg>
+        </button>
+
         <!--Навігація на інші сторінки-->
+        <div class="big-content">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"
-              ><a class="link nav__link" href="./index.html">Студія</a></li
+              ><a class="link current nav__link--current nav__link" href="./index.html"
+                >Студія</a
+              ></li
             >
             <li class="nav__item"
-              ><a class="link current nav__link--current nav__link" href="./portfolio.html">Портфоліо</a></li
+              ><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li
             >
             <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
           </ul>
@@ -39,21 +49,67 @@
         <ul class="header__group list">
           <li class="header__contact">
             <a class="link nav__link" href="mailto:info@devstudio.com">
-              <svg class="svg-id" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com
+              <svg class="svg-id header-svg" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use></svg>
+              info@devstudio.com
             </a>
           </li>
 
           <li class="header__contact">
             <a class="link nav__link" href="tel:380961111111">
-              <svg class="svg-id" width="10" height="16">
+              <svg class="svg-id header-svg" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use></svg
               >+38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close40"></use>
+            </svg>
+          </button>
+
+          
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"
+              ><a class="link current nav__link--current nav__link" href="./index.html"
+                >Студія</a
+              ></li
+            >
+            <li class="nav__item"
+              ><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li
+            >
+            <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="header__group list">
+          <li class="header__contact">
+            <a class="link nav__link" href="tel:380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+
+          <li class="header__contact">
+            <a class="link nav__link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+     
+        <ul class="mobil-socials list">
+          <li><a href="" class="mob-link link">Instagram</a></li>
+          <li><a href="" class="mob-link link">Twitter</a></li>
+          <li><a href="" class="mob-link link">Facebook</a></li>
+          <li><a href="" class="mob-link link">LinkedIn</a></li>
+        </ul>
+    
+        </div>
+    </div>
     </header>
 
     <!--Main-->
@@ -337,6 +393,18 @@
         </div>
       </footer>
       <script src="./js/modal.js"></script>
+      <script src="./js/header-scroll.js"></script>
+      <!-- animations -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="./js/aos-animate.js"></script>
+      <!-- mobile menu -->
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/mobile-menu.js"></script>
     </body>
   </html>
   

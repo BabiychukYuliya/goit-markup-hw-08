@@ -13,9 +13,21 @@
   }
   
   .gallary__item {
-    width: 370px;
     transition: background-color var(--anim-tm), box-shadow var(--anim-tm);
     background-color: var(--primary-bc-cl);
+    display: flex;
+
+    @media screen and (min-width: 480px) {
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+    }
   }
   
   .portfolio__gallary {
@@ -28,6 +40,7 @@
   }
   
   .gallary__border {
+    flex-grow: 1;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;

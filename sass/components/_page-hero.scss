@@ -1,6 +1,6 @@
 .hero {
-    // max-width: 1600px;
-    // min-height: 600px;
+    max-width: 1600px;
+    min-height: 600px;
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -10,7 +10,7 @@
     background-color: var(--secondary-bc-cl);
   
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero/Header\ img.jpg);
+      url(../images/hero/Header\ img.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -18,14 +18,14 @@
   screen and (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero/Header\ img@2x.jpg);
+      url(../images/hero/Header\ img@2x.jpg);
     }
   }
 
 @media screen and (min-width: 481px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/hero/Header\ img1x_tab.jpg);
+    url(../images/hero/Header\ img1x_tab.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -33,7 +33,7 @@ screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/hero/Header\ img@2x_tab.jpg);
+    url(../images/hero/Header\ img@2x_tab.jpg);
   }
 }
 }
@@ -43,7 +43,7 @@ screen and (min-resolution: 2dppx) {
 @media screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/hero/Img1x_desk.jpg);
+    url(../images/hero/Img1x_desk.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -51,7 +51,7 @@ screen and (min-resolution: 2dppx) {
   screen and (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/hero/Img@2x_desk.jpg);
+      url(../images/hero/Img@2x_desk.jpg);
     }
   }
 
