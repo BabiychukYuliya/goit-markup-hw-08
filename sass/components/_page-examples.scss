@@ -16,12 +16,19 @@
       position: relative;
     }
   
-    
+    .example__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+
     .example__description {
       position: absolute;
       display: block;
       bottom: 0;
-      max-width: 370px;
+      width: 370px;
       height: 70px;
       padding-top: 27px;
       background-color: rgba(47, 48, 58, 0.8);

@@ -21,6 +21,22 @@
     border-radius: 0px 0px 4px 4px;
   }
   
+@media screen and (min-width: 479px) {
+  .team__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .list-comand {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+}
+
   .team__name {
     margin-bottom: 10px;
     font-weight: 500;

@@ -12,33 +12,23 @@
     }
   }
   
-
-  .footer-contact {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      gap: 70px;
-      align-items: baseline;
-    }
-  
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      justify-content: space-between;
-  
-      margin-left: 76px;
-      margin-right: 89px;
-      margin-bottom: 60px;
-    }
-  }
-
-  .footer-main {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
-    }
-  
-    @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
+    .footer__location {
       text-align: center;
+      margin-bottom: 60px;
     }
   }
+
+
   
+@media screen and (min-width: 768px) {
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+}
+
   .footer__address {
     margin-bottom: 9px;
     font-style: normal;
@@ -87,6 +77,11 @@
     }
   }
   
+  @media screen and (min-width: 1200px) {
+    .footer__socials {
+      margin-left: 70px;
+    }
+  }
   .socials {
     justify-content: center;
     display: flex;
@@ -115,7 +110,7 @@
  
   
   .subscription {
-
+    align-items: flex-end;
     margin-left: auto;
 
     @media screen and (max-width: 1199px) {
@@ -125,6 +120,7 @@
   }
   
   .subscription__btn {
+    height: 50px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -146,8 +142,10 @@
   
   
   .footer__input {
-    margin: 0 auto;
-    padding-left: 16px;
+    // margin: 0 auto;
+    // padding-left: 16px;
+    height: 50px;
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
@@ -156,13 +154,8 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: border-color var(--anim-tm);
 
-    @media screen and (min-width: 768px) {
-      width: 450px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
-      width: 358px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
     }
   }
   
@@ -170,5 +163,13 @@
     @media screen and (min-width: 1200px) {
       display: flex;
       gap: 12px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .subscription {
+      display: flex;
+      gap: 12px;
+      justify-content: baseline;
     }
   }
