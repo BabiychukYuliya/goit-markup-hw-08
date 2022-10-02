@@ -585,7 +585,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-content {
+  .footer-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -596,7 +596,7 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-content {
+  .footer-contact {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
