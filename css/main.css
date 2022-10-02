@@ -664,6 +664,17 @@ img {
   }
 }
 
+.socials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
 .footer__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,6 +757,15 @@ img {
   .footer__input {
     margin-bottom: 0;
     width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
   }
 }
 

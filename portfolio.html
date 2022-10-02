@@ -32,38 +32,39 @@
 
         <!--Навігація на інші сторінки-->
         <div class="big-content">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"
-              ><a class="link current nav__link--current nav__link" href="./index.html"
-                >Студія</a
-              ></li
-            >
-            <li class="nav__item"
-              ><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li
-            >
-            <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"
+                ><a class="link current nav__link--current nav__link" href="./index.html"
+                  >Студія</a
+                ></li
+              >
+              <li class="nav__item"
+                ><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li
+              >
+              <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <ul class="header__group list">
+            <li class="header__contact">
+              <a class="link nav__link" href="mailto:info@devstudio.com">
+                <svg class="svg-id header-svg" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+
+            <li class="header__contact">
+              <a class="link nav__link" href="tel:380961111111">
+                <svg class="svg-id header-svg" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use></svg
+                >+38 096 111 11 11
+              </a>
+            </li>
           </ul>
-        </nav>
-
-        <ul class="header__group list">
-          <li class="header__contact">
-            <a class="link nav__link" href="mailto:info@devstudio.com">
-              <svg class="svg-id header-svg" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg>
-              info@devstudio.com
-            </a>
-          </li>
-
-          <li class="header__contact">
-            <a class="link nav__link" href="tel:380961111111">
-              <svg class="svg-id header-svg" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use></svg
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
 
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-toggle js-close-menu">
@@ -72,44 +73,38 @@
             </svg>
           </button>
 
-          
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"
-              ><a class="link current nav__link--current nav__link" href="./index.html"
-                >Студія</a
-              ></li
-            >
-            <li class="nav__item"
-              ><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li
-            >
-            <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"
+                ><a class="link current nav__link--current nav__link" href="./index.html"
+                  >Студія</a
+                ></li
+              >
+              <li class="nav__item"
+                ><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li
+              >
+              <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <ul class="header__group list">
+            <li class="header__contact">
+              <a class="link nav__link" href="tel:380961111111"> +38 096 111 11 11 </a>
+            </li>
+
+            <li class="header__contact">
+              <a class="link nav__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+            </li>
           </ul>
-        </nav>
 
-        <ul class="header__group list">
-          <li class="header__contact">
-            <a class="link nav__link" href="tel:380961111111">
-              +38 096 111 11 11
-            </a>
-          </li>
-
-          <li class="header__contact">
-            <a class="link nav__link" href="mailto:info@devstudio.com">
-              info@devstudio.com
-            </a>
-          </li>
-        </ul>
-     
-        <ul class="mobil-socials list">
-          <li><a href="" class="mob-link link">Instagram</a></li>
-          <li><a href="" class="mob-link link">Twitter</a></li>
-          <li><a href="" class="mob-link link">Facebook</a></li>
-          <li><a href="" class="mob-link link">LinkedIn</a></li>
-        </ul>
-    
+          <ul class="mobil-socials list">
+            <li><a href="" class="mob-link link">Instagram</a></li>
+            <li><a href="" class="mob-link link">Twitter</a></li>
+            <li><a href="" class="mob-link link">Facebook</a></li>
+            <li><a href="" class="mob-link link">LinkedIn</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
     </header>
 
     <!--Main-->
@@ -140,7 +135,32 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img1.jpg" alt="Фото трьох співробітників" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img1_lg-@1x.jpg 1x,
+                        ./images\portfolio\img1_lg-@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/img1.jpg" alt="Фото трьох співробітників" max-width="370" />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img1_md-@1x.jpg 1x,
+                        ./images\portfolio\img1_md-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img1_sm-@1x.jpg 1x,
+                        ./images\portfolio\img1_sm-@2x.jpg 2x
+                      "
+                    />
+                  </picture>
+
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -159,7 +179,31 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img2.jpg" alt="Два баскетболіста" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img2_lg-@1x.jpg 1x,
+                        ./images\portfolio\img2_lg-@2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/img2.jpg" alt="Два баскетболіста" max-width="370" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img2_md-@1x.jpg 1x,
+                        ./images\portfolio\img2_md-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img2_sm-@1x.jpg 1x,
+                        ./images\portfolio\img2_sm-@2x.jpg 2x
+                      "
+                    />
+                  </picture>
+
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -178,7 +222,30 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img3.jpg" alt="Лого ресторана" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img3_lg-@1x.jpg 1x,
+                        ./images\portfolio\img3_lg-@2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/img3.jpg" alt="Лого ресторана" max-width="370" />
+                  <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img3_md-@1x.jpg 1x,
+                        ./images\portfolio\img3_md-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img3_sm-@1x.jpg 1x,
+                        ./images\portfolio\img3_sm-@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -197,7 +264,30 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img4.jpg" alt="Навушники" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img4_lg-@1x.jpg 1x,
+                        ./images\portfolio\img4_lg-@2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/img4.jpg" alt="Навушники" max-width="370" />
+                  <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img4_md-@1x.jpg 1x,
+                        ./images\portfolio\img4_md-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img4_sm-@1x.jpg 1x,
+                        ./images\portfolio\img4_sm-@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -216,7 +306,30 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img5.jpg" alt="Дві коробки" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img5_lg-@1x.jpg 1x,
+                        ./images\portfolio\img5_lg-@2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/img5.jpg" alt="Дві коробки" max-width="370" />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\portfolio\img5_md-@1x.jpg 1x,
+                    ./images\portfolio\img5_md-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\portfolio\img5_sm-@1x.jpg 1x,
+                    ./images\portfolio\img5_sm-@2x.jpg 2x
+                  "
+                />
+              </picture>
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -235,7 +348,30 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img6.jpg" alt="Монітор" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img6_lg-@1x.jpg 1x,
+                        ./images\portfolio\img6_lg-@2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/img6.jpg" alt="Монітор" max-width="370" />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\portfolio\img6_md-@1x.jpg 1x,
+                    ./images\portfolio\img6_md-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\portfolio\img6_sm-@1x.jpg 1x,
+                    ./images\portfolio\img6_sm-@2x.jpg 2x
+                  "
+                />
+              </picture>
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -254,7 +390,30 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img7.jpg" alt="Книга" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img7_lg-@1x.jpg 1x,
+                        ./images\portfolio\img7_lg-@2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/img7.jpg" alt="Книга" max-width="370" />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\portfolio\img7_md-@1x.jpg 1x,
+                    ./images\portfolio\img7_md-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\portfolio\img7_sm-@1x.jpg 1x,
+                    ./images\portfolio\img7_sm-@2x.jpg 2x
+                  "
+                />
+              </picture>
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -273,7 +432,30 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img8.jpg" alt="Бирка" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img8_lg-@1x.jpg 1x,
+                        ./images\portfolio\img8_lg-@2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/img8.jpg" alt="Бирка" max-width="370" />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\portfolio\img8_md-@1x.jpg 1x,
+                    ./images\portfolio\img8_md-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\portfolio\img8_sm-@1x.jpg 1x,
+                    ./images\portfolio\img8_sm-@2x.jpg 2x
+                  "
+                />
+              </picture>
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -292,7 +474,30 @@
             <li class="gallary__item">
               <a href="" class="gallary__link">
                 <div class="overlay">
-                  <img src="./images/img9.jpg" alt="Ноутбук" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img9_lg-@1x.jpg 1x,
+                        ./images\portfolio\img9_lg-@2x.jpg 2x
+                      "
+                    />
+                  <img src="./images/img9.jpg" alt="Ноутбук" max-width="370" />
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\portfolio\img9_md-@1x.jpg 1x,
+                    ./images\portfolio\img9_md-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\portfolio\img9_sm-@1x.jpg 1x,
+                    ./images\portfolio\img9_sm-@2x.jpg 2x
+                  "
+                />
+              </picture>
                   <div class="overlay--visible">
                     <p class="overlay__text"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -312,99 +517,98 @@
       </section>
     </main>
 
-      <!--Футер-->
-      <footer class="footer">
-        <div class="container container__footer">
-          <div>
-            <a class="logo link footer__item" href="">Web<span class="logo__light">Studio</span></a>
-            <address>
-              <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
-              <ul class="footer__list">
-                <li class="footer__contacts"
-                  ><a class="footer__link link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  ></li
-                >
-                <li><a class="footer__link link" href="tel:380961111111">+38 096 111 11 11</a></li>
-              </ul>
-            </address>
-          </div>
-  
-          <div class="footer__socials">
-            <h3 class="footer__title">приєднуйтесь</h3>
-            <ul class="socials">
-              <li
-                ><a
-                  class="footer__icon"
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  ><svg width="20" height="20" fill="#FFFFFF">
-                    <use href="./images/icons.svg#icon-instagram"></use></svg></a
-              ></li>
-  
-              <li
-                ><a
-                  class="footer__icon"
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Twitter"
-                  ><svg width="20" height="20" fill="#FFFFFF">
-                    <use href="./images/icons.svg#icon-twitter"></use></svg></a
-              ></li>
-  
-              <li
-                ><a
-                  class="footer__icon"
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  ><svg width="20" height="20" fill="#FFFFFF">
-                    <use href="./images/icons.svg#icon-facebook"></use></svg></a
-              ></li>
-  
-              <li
-                ><a
-                  class="footer__icon"
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="linkedin"
-                  ><svg width="20" height="20" fill="#FFFFFF">
-                    <use href="./images/icons.svg#icon-linkedin"></use></svg></a
-              ></li>
+    <!--Футер-->
+    <footer class="footer">
+      <div class="container container__footer">
+        <div>
+          <a class="logo link footer__item" href="">Web<span class="logo__light">Studio</span></a>
+          <address>
+            <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="footer__list">
+              <li class="footer__contacts"
+                ><a class="footer__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                ></li
+              >
+              <li><a class="footer__link link" href="tel:380961111111">+38 096 111 11 11</a></li>
             </ul>
-          </div>
-  
-          <div class="subscription">
-            <div>
-              <h3 class="footer__title">Підпишіться на розсилку</h3>
-              <input type="text" placeholder="E-mail" class="footer__input" />
-            </div>
-  
-            <button class="subscription__btn" type="submit"
-              >Підписатися<svg width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send"></use></svg
-            ></button>
-          </div>
+          </address>
         </div>
-      </footer>
-      <script src="./js/modal.js"></script>
-      <script src="./js/header-scroll.js"></script>
-      <!-- animations -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="./js/aos-animate.js"></script>
-      <!-- mobile menu -->
-      <script
-        defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"
-      ></script>
-      <script defer src="./js/mobile-menu.js"></script>
-    </body>
-  </html>
-  
+
+        <div class="footer__socials">
+          <h3 class="footer__title">приєднуйтесь</h3>
+          <ul class="socials">
+            <li
+              ><a
+                class="footer__icon"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><svg width="20" height="20" fill="#FFFFFF">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg></a
+            ></li>
+
+            <li
+              ><a
+                class="footer__icon"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                ><svg width="20" height="20" fill="#FFFFFF">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg></a
+            ></li>
+
+            <li
+              ><a
+                class="footer__icon"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><svg width="20" height="20" fill="#FFFFFF">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg></a
+            ></li>
+
+            <li
+              ><a
+                class="footer__icon"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+                ><svg width="20" height="20" fill="#FFFFFF">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a
+            ></li>
+          </ul>
+        </div>
+
+        <div class="subscription">
+          <div>
+            <h3 class="footer__title">Підпишіться на розсилку</h3>
+            <input type="text" placeholder="E-mail" class="footer__input" />
+          </div>
+
+          <button class="subscription__btn" type="submit"
+            >Підписатися<svg width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use></svg
+          ></button>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/header-scroll.js"></script>
+    <!-- animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos-animate.js"></script>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>

@@ -12,6 +12,7 @@
     }
   }
   
+
   .footer-content {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -86,6 +87,12 @@
     }
   }
   
+  .socials {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
   
   .footer__icon {
     display: flex;
@@ -159,3 +166,9 @@
     }
   }
   
+  .footer-container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 12px;
+    }
+  }
