@@ -67,8 +67,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -121,6 +119,11 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) {
+  .header__group {
+    margin-left: auto;
+  }
+}
 .header__group :hover, .header__group :focus {
   color: var(--accent-txt-cl);
   fill: var(--accent-txt-cl);
@@ -136,9 +139,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    margin-left: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -244,6 +246,11 @@ img {
   color: var(--accent-txt-cl);
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: auto;
+  }
+}
 .hero {
   max-width: 1600px;
   min-height: 600px;
@@ -480,7 +487,7 @@ img {
 }
 
 @media screen and (min-width: 479px) {
-  .team__list:not(:last-child) {
+  .team__list {
     margin-bottom: 30px;
   }
 }
@@ -1169,6 +1176,18 @@ img {
   transition: opacity var(--anim-tm);
 }
 
+@media screen and (max-width: 1199px) {
+  .register-form {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .register-form {
+    width: 528px;
+    height: 581px;
+  }
+}
 .menu-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1191,6 +1210,9 @@ img {
   .menu-btn {
     display: none;
   }
+}
+.menu-btn:hover {
+  fill: var(--accent-txt-cl);
 }
 
 .menu-container {
@@ -1243,6 +1265,7 @@ img {
 }
 
 .mobil-socials {
+  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1259,4 +1282,8 @@ img {
 
 .mob-link {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-group {
+  margin-bottom: auto;
 }/*# sourceMappingURL=main.css.map */

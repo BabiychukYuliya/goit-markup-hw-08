@@ -164,3 +164,17 @@
     opacity: 0;
     transition: opacity var(--anim-tm);
   }
+
+  @media screen and (max-width: 1199px) {
+    .register-form {
+      width: 450px;
+      height: 609px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .register-form {
+      width: 528px;
+      height: 581px;
+    }
+  }

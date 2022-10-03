@@ -22,7 +22,7 @@
   }
   
 @media screen and (min-width: 479px) {
-  .team__list:not(:last-child) {
+  .team__list {
     margin-bottom: 30px;
   }
 }

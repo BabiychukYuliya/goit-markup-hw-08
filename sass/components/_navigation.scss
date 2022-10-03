@@ -72,3 +72,8 @@ line-height: 1.17;
     color: var(--accent-txt-cl);
   }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: auto;
+  }
+}
