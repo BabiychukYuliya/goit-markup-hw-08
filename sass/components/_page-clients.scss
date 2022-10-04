@@ -1,6 +1,11 @@
 .section__client {
-    padding-top: 94px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   
   .client__list {
@@ -33,5 +38,12 @@
       border-color: var(--accent-txt-cl);
     }
 
+    @media screen and (min-width: 768px) {
+      min-width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      min-width: 170px;
+    }
   }
   

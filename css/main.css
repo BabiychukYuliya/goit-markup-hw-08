@@ -67,6 +67,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -124,6 +125,11 @@ img {
     margin-left: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .header__group .header__contact:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
 .header__group :hover, .header__group :focus {
   color: var(--accent-txt-cl);
   fill: var(--accent-txt-cl);
@@ -139,6 +145,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
     width: 100%;
   }
@@ -146,6 +155,9 @@ img {
 @media screen and (min-width: 768px) {
   .header__contact {
     margin-left: auto;
+  }
+  .header__contact:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -230,11 +242,13 @@ img {
 
 @media screen and (max-width: 768px) {
   .nav__item {
-    padding-bottom: 32px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1, 17;
     letter-spacing: 0.02em;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 32px;
   }
   .nav__link {
     font-weight: 500;
@@ -249,6 +263,12 @@ img {
 @media screen and (max-width: 767px) {
   .nav {
     margin-bottom: auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 .hero {
@@ -306,11 +326,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
+  width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 
@@ -373,7 +395,6 @@ img {
 
 .credo__item {
   max-width: 450px;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .credo__item {
@@ -386,6 +407,11 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .credo__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .credo__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,8 +512,18 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 479px) {
-  .team__list {
+.team__card {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team__card {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .team__list:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -559,8 +595,14 @@ img {
 }
 
 .section__client {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section__client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client__list {
@@ -601,6 +643,16 @@ img {
   color: var(--accent-txt-cl);
   border-color: var(--accent-txt-cl);
 }
+@media screen and (min-width: 768px) {
+  .client__link {
+    min-width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    min-width: 170px;
+  }
+}
 
 .footer {
   background-color: var(--secondary-bc-cl);
@@ -613,7 +665,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 70px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -626,15 +677,19 @@ img {
     margin-bottom: 60px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .footer-main {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
   }
 }
 .footer__address {
@@ -673,11 +728,6 @@ img {
   color: var(--light-txt-cl);
 }
 
-@media screen and (max-width: 767px) {
-  .footer__socials {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .footer__socials {
     text-align: center;
@@ -766,7 +816,6 @@ img {
 
 .footer__input {
   height: 50px;
-  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -780,6 +829,12 @@ img {
 @media screen and (max-width: 1199px) {
   .footer__input {
     margin-bottom: 20px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
   }
 }
 
@@ -898,6 +953,7 @@ img {
 }
 
 .portfolio__gallary {
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1282,8 +1338,4 @@ img {
 
 .mob-link {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.mobile-group {
-  margin-bottom: auto;
 }/*# sourceMappingURL=main.css.map */
