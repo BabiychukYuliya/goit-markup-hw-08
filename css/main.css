@@ -521,7 +521,7 @@ img {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .team__list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -718,6 +718,7 @@ img {
 
 .footer__item {
   display: block;
+  margin-bottom: 20px;
 }
 
 .footer__title {
@@ -736,6 +737,9 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__socials {
     margin-left: 70px;
+  }
+  .footer-main {
+    text-align: left;
   }
 }
 .socials {

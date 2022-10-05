@@ -60,7 +60,7 @@
   
   .footer__item {
     display: block;
-    // margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   
   
@@ -84,6 +84,10 @@
   @media screen and (min-width: 1200px) {
     .footer__socials {
       margin-left: 70px;
+    }
+
+    .footer-main {
+      text-align: left;
     }
   }
   .socials {
